@@ -1,0 +1,106 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tufts EECS, Tufts University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  c:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+Z:\ee14\HWs\hw4\hw4.uvprojx
+Project File Date:  03/15/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'c:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling core_cm4_constants.s...
+assembling startup_stm32l476xx.s...
+"Project Template/main.s", line 89 (column 9): Warning: A1865W: '#' not seen before constant expression
+   89 00000000  MOV r0, 0xFFFF ; x = r0
+                       ^
+"Project Template/main.s", line 90 (column 9): Warning: A1865W: '#' not seen before constant expression
+   90 00000004  MOV r1, 0x0004 ; y = r1
+                       ^
+"Project Template/main.s", line 91 (column 9): Warning: A1865W: '#' not seen before constant expression
+   91 00000008  MOV r2, 0x0005 ; z = r2
+                       ^
+"Project Template/main.s", line 100 (column 9): Warning: A1865W: '#' not seen before constant expression
+  100 0000001e  MOV r4, 0x03 ; Initial x
+                       ^
+"Project Template/main.s", line 101 (column 9): Warning: A1865W: '#' not seen before constant expression
+  101 00000022  MOV r5, 0x11 ; Initial y
+                       ^
+"Project Template/main.s", line 108 (column 9): Warning: A1865W: '#' not seen before constant expression
+  108 00000032  MOV r8, 0xFFFFFFFB ; Initial x
+                       ^
+"Project Template/main.s", line 111 (column 10): Warning: A1865W: '#' not seen before constant expression
+  111 0000003e  MOV r11, 0x03 ; 3
+                        ^
+"Project Template/main.s", line 113 (column 10): Warning: A1865W: '#' not seen before constant expression
+  113 00000046  MOV r12, 0x00 ; Set y default to 0
+                        ^
+"Project Template/main.s", line 115 (column 10): Warning: A1865W: '#' not seen before constant expression
+  115 0000004c  MOV r11, 0x07 ; 7
+                        ^
+"Project Template/main.s", line 118 (column 10): Warning: A1865W: '#' not seen before constant expression
+  118 00000058  MOV r11, 0x0A ; 10
+                        ^
+"Project Template/main.s", line 121 (column 15): Warning: A1865W: '#' not seen before constant expression
+  121 00000062  SUB r12, r12, 0x0B ; y -= 11
+                             ^
+"Project Template/main.s", line 125 (column 9): Warning: A1865W: '#' not seen before constant expression
+  125 00000066  MOV r4, 0x03 ; Initial x
+                       ^
+"Project Template/main.s", line 126 (column 9): Warning: A1865W: '#' not seen before constant expression
+  126 0000006a  MOV r5, 0x11 ; Initial y
+                       ^
+0 Errors, 13 Warnings
+assembling main.s...
+assembling stm32l476xx_constants.s...
+assembling prob1.s...
+linking...
+.\Objects\hw4.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=264 RO-data=392 RW-data=0 ZI-data=1536  
+Finished: 0 information, 1 warning and 0 error messages.
+FromELF: creating hex file...
+".\Objects\hw4.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L4xx_DFP.2.5.0.pack
+                Keil.STM32L4xx_DFP.2.5.0
+                STMicroelectronics STM32L4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  c:\Keil_v5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  c:\Keil_v5\ARM\PACK\Keil\STM32L4xx_DFP\2.5.0\Drivers\CMSIS\Device\ST\STM32L4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
