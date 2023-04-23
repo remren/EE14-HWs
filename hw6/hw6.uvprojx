@@ -16,7 +16,7 @@
         <TargetCommonOption>
           <Device>STM32L476VGTx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L4xx_DFP.2.5.0</PackID>
+          <PackID>Keil.STM32L4xx_DFP.2.6.1</PackID>
           <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00018000) IRAM2(0x10000000,0x00008000) IROM(0x08000000,0x00100000) CPUTYPE("Cortex-M4") FPU2 DSP CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
@@ -386,22 +386,22 @@
             <File>
               <FileName>core_cm4_constants.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Project Template\core_cm4_constants.s</FilePath>
-            </File>
-            <File>
-              <FileName>main.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Project Template\main.s</FilePath>
+              <FilePath>\\vs-home\rren02\ee14\HWs\hw6\Answers\core_cm4_constants.s</FilePath>
             </File>
             <File>
               <FileName>startup_stm32l476xx.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Project Template\startup_stm32l476xx.s</FilePath>
+              <FilePath>\\vs-home\rren02\ee14\HWs\hw6\Answers\startup_stm32l476xx.s</FilePath>
             </File>
             <File>
               <FileName>stm32l476xx_constants.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Project Template\stm32l476xx_constants.s</FilePath>
+              <FilePath>\\vs-home\rren02\ee14\HWs\hw6\Answers\stm32l476xx_constants.s</FilePath>
+            </File>
+            <File>
+              <FileName>ch8p16.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Answers\ch8p16.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -424,5 +424,14 @@
     </components>
     <files/>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>hw6</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>
