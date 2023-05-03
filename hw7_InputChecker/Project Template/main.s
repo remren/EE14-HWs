@@ -97,6 +97,8 @@ a_Joy_p						; all_Joystick_post
 		
 		B	check
 		
+stop 	B 		stop     		; dead loop & program hangs here
+		
 		ENDP
 
 	; *** SUBROUTINES ***
@@ -121,6 +123,12 @@ g_LED_i	PROC
 ;		EOREQ r1, r1, #(1<<8)
 ;		STR r1, [r0, #GPIO_ODR]
 ;		B	post_g_TOG
+		
+;g_ON	LDR r0, =GPIOE_BASE
+;		LDR r1, [r0, #GPIO_ODR]
+;		ORR r1, r1, #(1<<8)
+;		STR r1, [r0, #GPIO_ODR]
+;		B	post_g_ON		
 		
 		; Enable the clock to GPIO Port B - Red LED
 r_LED_i LDR r0, =RCC_BASE
@@ -177,18 +185,6 @@ a_Joy_i	LDR r0, =RCC_BASE
 		ORR r1, r1, #(0x2<<2*5)
 		STR r1, [r0, #GPIO_PUPDR]
 		B	a_Joy_p
-		
-pwd_L	
-		LDR r0, =GPIOB_BASE			; turn red LED OFF
-		LDR r1, [r0, #GPIO_ODR]
-		AND r1, r1, #(0<<2)
-		STR r1, [r0, #GPIO_ODR]
-		
-		LDR r0, =GPIOE_BASE			; turn green LED ON
-		LDR r1, [r0, #GPIO_ODR]
-		ORR r1, r1, #(1<<8)
-		STR r1, [r0, #GPIO_ODR]
-stop 	B 		stop     			; dead loop & program hangs here
 
 check
 		LDR r0, =GPIOA_BASE
@@ -197,7 +193,7 @@ check
 		MOV r2, r1					; Save current IDR to previous
 		MOV r4, #0x00				; r4 is the number of inputs
 		MOV r5, #0x00				; r5 is the running tally for the password
-loop								; Start of While Loop
+loop	
 		LDR r0, =GPIOA_BASE
 		LDR r1, [r0, #GPIO_IDR]		; Check IDR again
 		ORR r1, #0x4000
@@ -218,7 +214,7 @@ loop								; Start of While Loop
 		CMP r5, #0x01				; If the next input is DOWN and the tally indicates a 1, then the previous input was an UP
 		ADDEQ r5, #0x01				; If equal, add 1 to tally, continuing password		
 		MOVNE r5, #0x00				; Else, set tally back to 0, restarting password process
-skipD
+		skipD
 
 		MOV r3, r2
 		AND r3, #0x02				; Check Left
@@ -228,7 +224,7 @@ skipD
 		CMP r5, #0x02
 		ADDEQ r5, #0x01
 		MOVNE r5, #0x00
-skipL
+		skipL
 		
 		MOV r3, r2
 		AND r3, #0x04				; Check Right
@@ -238,16 +234,16 @@ skipL
 		CMP r5, #0x03
 		ADDEQ r5, #0x01
 		MOVNE r5, #0x00
-skipR
+		skipR
 		
 		MOV r2, r1					; Save current state of IDR to previous
 		
 		CMP r4, #0x04				; If 4 inputs have been received since the start, red LED should be on.
 		BEQ r_ON_L
-post_r_ON_L
+		post_r_ON_L
 		
 		CMP r5, #0x04				; If correct password has been input, lock out program
-		BEQ pwd_L		
+		
 
 ;		B g_TOG
 ;post_g_TOG
@@ -258,7 +254,8 @@ post_r_ON_L
 ;		B	g_ON			; green_ON
 ;post_g_ON					; post_green_ON
 
-		B 		loop				; End of While Loop
+		B 		loop	
+
 		ENDP
 			
 					
