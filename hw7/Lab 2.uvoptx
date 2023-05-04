@@ -161,7 +161,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\Project Template\main.s</Filename>
+          <Filename>Z:\ee14\EE14-HWs\hw7\Project Template\main.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -177,7 +177,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\Project Template\main.s</Filename>
+          <Filename>Z:\ee14\EE14-HWs\hw7\Project Template\main.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -193,7 +193,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\Project Template\main.s</Filename>
+          <Filename>Z:\ee14\EE14-HWs\hw7\Project Template\main.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -209,7 +209,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\Project Template\main.s</Filename>
+          <Filename>Z:\ee14\EE14-HWs\hw7\Project Template\main.s</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -291,8 +291,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Project Template\main.s</PathWithFileName>
-      <FilenameWithoutPath>main.s</FilenameWithoutPath>
+      <PathWithFileName>.\Project Template\startup_stm32l476xx.s</PathWithFileName>
+      <FilenameWithoutPath>startup_stm32l476xx.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -303,8 +303,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Project Template\startup_stm32l476xx.s</PathWithFileName>
-      <FilenameWithoutPath>startup_stm32l476xx.s</FilenameWithoutPath>
+      <PathWithFileName>.\Project Template\stm32l476xx_constants.s</PathWithFileName>
+      <FilenameWithoutPath>stm32l476xx_constants.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -315,8 +315,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Project Template\stm32l476xx_constants.s</PathWithFileName>
-      <FilenameWithoutPath>stm32l476xx_constants.s</FilenameWithoutPath>
+      <PathWithFileName>.\Project Template\p1passwordsequence.s</PathWithFileName>
+      <FilenameWithoutPath>p1passwordsequence.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

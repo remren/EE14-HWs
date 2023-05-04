@@ -84,6 +84,7 @@
 				
 __main	PROC
 	
+	; *** HW7 - Problem 1: Password Sequence ***
 		MOV	r0, #0
 		
 		B	g_LED_i			; green_LED_initialize

@@ -389,11 +389,6 @@
               <FilePath>.\Project Template\core_cm4_constants.s</FilePath>
             </File>
             <File>
-              <FileName>main.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Project Template\main.s</FilePath>
-            </File>
-            <File>
               <FileName>startup_stm32l476xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\Project Template\startup_stm32l476xx.s</FilePath>
@@ -402,6 +397,11 @@
               <FileName>stm32l476xx_constants.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\Project Template\stm32l476xx_constants.s</FilePath>
+            </File>
+            <File>
+              <FileName>p1passwordsequence.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Project Template\p1passwordsequence.s</FilePath>
             </File>
           </Files>
         </Group>
