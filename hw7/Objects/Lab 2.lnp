@@ -2,7 +2,7 @@
 ".\objects\core_cm4_constants.o"
 ".\objects\startup_stm32l476xx.o"
 ".\objects\stm32l476xx_constants.o"
-".\objects\p1passwordsequence.o"
+".\objects\problem4_txtbkch15p6.o"
 --strict --scatter ".\Objects\Lab 2.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

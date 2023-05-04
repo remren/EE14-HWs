@@ -399,9 +399,9 @@
               <FilePath>.\Project Template\stm32l476xx_constants.s</FilePath>
             </File>
             <File>
-              <FileName>p1passwordsequence.s</FileName>
+              <FileName>problem4_txtbkCH15p6.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Project Template\p1passwordsequence.s</FilePath>
+              <FilePath>.\Project Template\problem4_txtbkCH15p6.s</FilePath>
             </File>
           </Files>
         </Group>

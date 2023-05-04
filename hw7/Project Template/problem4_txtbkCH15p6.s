@@ -7,7 +7,7 @@
 				
 __main	PROC
 	
-	; *** HW7 - Textbook CH Problem 4 ***
+	; *** HW7 - Textbook CH Problem 6 ***
 	
 		; System Clock Initialization!!!
 		LDR r0, = RCC_BASE				; Enable High Speed Oscillator
@@ -69,11 +69,11 @@ __main	PROC
 		STR r1, [r0, #TIM_CR1]
 		
 		LDR r1, [r0, #TIM_PSC]			; Clock prescaler (16-bits, up to 65,535)
-		LDR r1, = 3999
+		LDR r1, = 8						; Problem 6
 		STR r1, [r0, #TIM_PSC]
 		
 		LDR r1, [r0, #TIM_ARR]			; Auto-reload?
-		LDR r1, = 2000-1				; ARR - 1
+		LDR r1, = 1000-1				; ARR - 1, for problem 6
 		STR r1, [r0, #TIM_ARR]
 		
 		LDR r1, [r0, #TIM_CCR1]			; Can be any value between 0 and 1999
